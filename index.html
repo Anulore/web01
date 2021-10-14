@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/style.min.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<title>Lab 01</title>
+</head>
+<body>
+	<table class="main_table">
+		<thead>
+			<tr class="header">
+				<td colspan="2">
+					Выполнил: Бобринёв Кирилл<br>
+					Учебная группа: P3212<br>
+					Вариант: 12025<br>
+				</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="content">
+				<td class="graph">
+					<svg>
+						<line x1="0" y1="150" x2="300" y2="150" stroke="black"></line>
+						<line x1="150" y1="0" x2="150" y2="300" stroke="black"></line>
+						
+						<line x1="210" y1="148" x2="210" y2="152" stroke="black"></line>
+						<line x1="270" y1="148" x2="270" y2="152" stroke="black"></line>
+						<line x1="90" y1="148" x2="90" y2="152" stroke="black"></line>
+						<line x1="30" y1="148" x2="30" y2="152" stroke="black"></line>
+
+						<text x="200" y="140">R/2</text>
+						<text x="265" y="140">R</text>
+						<text x="290" y="140">x</text>
+						<text x="75" y="140">-R/2</text>
+						<text x="20" y="140">-R</text>
+
+						<line x1="148" y1="90" x2="152" y2="90" stroke="black"></line>
+						<line x1="148" y1="30" x2="152" y2="30" stroke="black"></line>
+						<line x1="148" y1="210" x2="152" y2="210" stroke="black"></line>
+						<line x1="148" y1="270" x2="152" y2="270" stroke="black"></line>
+
+						<text x="156" y="95">R/2</text>
+						<text x="156" y="35">R</text>
+						<text x="158" y="10">y</text>
+						<text x="156" y="215">-R/2</text>
+						<text x="156" y="275">-R</text>
+
+						<polygon points="300,150 295,155 295,145" fill="black" stroke="black"></polygon>
+						<polygon points="150,0 145,5 155,5" fill="black" stroke="black"></polygon>
+						
+						<rect class="rectangle" x="150" y="150" width="120" height="120"></rect>
+						<polygon class="triangle" points="150,150 210,150 150,90"></polygon>
+						<path class="quarter" d="M 150 30 Q 30 30 30 150 L 150 150 Z"></path>
+					</svg>
+				</td>
+				<td class="input_section">
+					<p>
+						Координата X: <br>
+						<input type="text" name="x" placeholder="-5 ... 5">
+					</p>
+					<p id="input-y">
+						Координата Y: <br>
+						<input type="button" name="y" value="-3">
+						<input type="button" name="y" value="-2">
+						<input type="button" name="y" value="-1">
+						<input type="button" name="y" value="0">
+						<input type="button" name="y" value="1">
+						<input type="button" name="y" value="2">
+						<input type="button" name="y" value="3">
+						<input type="button" name="y" value="4">
+						<input type="button" name="y" value="5">
+					</p>
+					<p id="input-r">
+						Координата R: <br>
+						<input type="button" name="r" value="1">
+						<input type="button" name="r" value="1.5">
+						<input type="button" name="r" value="2">
+						<input type="button" name="r" value="2.5">
+						<input type="button" name="r" value="3">
+					</p>
+					<br>
+					<button class="send" type="submit">Отправить</button>
+					<button class="clear" type="submit">Очистить</button>
+				</td>
+			</tr>
+			<tr class="result_section">
+				<td colspan="2">
+					<table class="result_table">
+						<thead>
+							<tr>
+								<th>X</th>
+								<th>Y</th>
+								<th>R</th>
+								<th>Результат</th>
+								<th>Время отправки</th>
+								<th>Время работы скрипта</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td class="true">ДА</td>
+								<td>0</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td class="false">НЕТ</td>
+								<td>0</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td class="false">НЕТ</td>
+								<td>0</td>
+								<td>0</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr class="footer">
+				<td colspan="2">
+					<span id="itmo">Университет ИТМО</span>
+					<span id="year">2021</span>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+</body>
+</html>
