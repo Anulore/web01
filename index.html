@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<title>Lab 01</title>
 </head>
 <body>
@@ -56,9 +56,10 @@
 					</svg>
 				</td>
 				<td class="input_section">
-					<p>
+					<p id="input-x">
 						Координата X: <br>
 						<input type="text" name="x" placeholder="-5 ... 5">
+						<p id="fieldX"></p>
 					</p>
 					<p id="input-y">
 						Координата Y: <br>
@@ -71,6 +72,7 @@
 						<input type="button" name="y" value="3">
 						<input type="button" name="y" value="4">
 						<input type="button" name="y" value="5">
+						<p id="fieldY"></p>
 					</p>
 					<p id="input-r">
 						Координата R: <br>
@@ -79,10 +81,11 @@
 						<input type="button" name="r" value="2">
 						<input type="button" name="r" value="2.5">
 						<input type="button" name="r" value="3">
+						<p id="fieldR"></p>
 					</p>
 					<br>
-					<button class="send" type="submit">Отправить</button>
-					<button class="clear" type="submit">Очистить</button>
+					<button type="submit" id="send">Отправить</button>
+					<button type="submit" id="clear">Очистить результат</button>
 				</td>
 			</tr>
 			<tr class="result_section">
@@ -99,30 +102,6 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td>0</td>
-								<td>0</td>
-								<td>0</td>
-								<td class="true">ДА</td>
-								<td>0</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td>0</td>
-								<td>0</td>
-								<td>0</td>
-								<td class="false">НЕТ</td>
-								<td>0</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td>0</td>
-								<td>0</td>
-								<td>0</td>
-								<td class="false">НЕТ</td>
-								<td>0</td>
-								<td>0</td>
-							</tr>
 						</tbody>
 					</table>
 				</td>
