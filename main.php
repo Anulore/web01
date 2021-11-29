@@ -89,8 +89,6 @@ function getJsonResultsHistory() {
 	return $jsonData;
 }
 
-
-
 session_start();
 date_default_timezone_set('Europe/Moscow');
 
@@ -118,9 +116,8 @@ if (!validateAllNumbers()) {
 $x = $_GET['x'];
 $y = $_GET['y'];
 $r = $_GET['r'];
-
+settype($x, 'float');
 $answer = checkHit($x, $y, $r);
-
 
 $totalTime = microtime(true) - $startTime;
 
@@ -138,9 +135,6 @@ if (!isset($_SESSION["history"])) {
 }
 array_push($_SESSION["history"], $result);
 
-
-
 echo(getJsonResultsHistory());
-
 
 ?>
