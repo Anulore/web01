@@ -100,7 +100,7 @@ if ($_GET["reload"] == true) {
 	exit();
 }
 
-if ($_GET["delete"] == true && isset($_SESSION['history'])) {
+if ($_GET["delete"] == true) {
 	$_SESSION['history'] = array();
 	exit();
 }
